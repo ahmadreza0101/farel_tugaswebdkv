@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Nama DKV 2</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+      color: #444;
+    }
+
+    .navigation {
+      width: 100%;
+      max-width: 800px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .nav-button {
+      background-color: #4a90e2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-button:hover {
+      background-color: #357abd;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 60px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .name {
+      background-color: #fff;
+      border-left: 5px solid #4a90e2;
+      padding: 10px 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .name span {
+      font-weight: bold;
+      color: #4a90e2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Daftar Nama DKV 2</h1>
+
+  <div class="navigation">
+    <button class="nav-button" onclick="goToPage('previous.html')">← Sebelumnya</button>
+    <button class="nav-button" onclick="goToPage('next.html')">Berikutnya →</button>
+  </div>
+
+  <div class="grid-container">
+    <!-- isi daftar nama tetap seperti sebelumnya -->
+    <!-- Contoh: -->
+    <div class="name"><span>1.</span> Achmad Dhanie Effendy</div>
+    <div class="name"><span>18.</span> Mahessa Bagaskara</div>
+    <!-- ... (lanjutkan semua nama seperti sebelumnya) ... -->
+    <div class="name"><span>34.</span> Viola Wilda Pardede</div>
+  </div>
+
+  <script>
+    function goToPage(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>

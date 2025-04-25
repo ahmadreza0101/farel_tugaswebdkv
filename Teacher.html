@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teacher</title>
+  <link rel="stylesheet" href="Dark Mode.css">
+  <style>
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.8s ease, color 0.8s ease;
+    }
+
+    header {
+      background-color: #211c84;
+      color: #f4f8ff;
+      padding: 15px;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: #f4f8ff;
+      text-decoration: none;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li {
+      display: inline-block;
+      position: relative;
+    }
+
+    header nav ul li a {
+      display: block;
+      color: #f4f8ff;
+      text-decoration: none;
+      pad: 20px 25px;
+      font-size: 20px;
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    .guru-list {
+      white-space: pre-line;
+      line-height: 1.8;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 40px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 32px;
+      color: #444;
+    }
+
+    /*foto*/
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      background-position: 50%;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      height: 350px; /* semua gambar jadi tinggi yang sama */
+      object-fit: cover; /* biar gambar tetap proporsional */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #211c84;
+      color: #f4f8ff;
+    }
+
+    .footer a {
+      color: #f0f6ff;
+      text-decoration: none;
+    }
+
+    /* menubar */
+    a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: #b5a8d5;
+      transition: width 0.4s ease-in-out;
+    }
+
+    a:hover::after {
+      width: 100%;
+    }
+
+    ul li a:hover {
+      color: #cdc1ff;
+      background: #7a73d1;
+      border-radius: 5px;
+    }
+
+    /*dark mode*/
+    .dark-mode h1 {
+      color: #f4f8ff;
+    }
+
+    .dark-mode li {
+      color: #f4f8ff;
+    }
+
+    .dark-mode .guru-list {
+      background-color: #111;
+      border: 1px solid #666;
+    }
+
+  </style>
+</head>
+<body>
+<header>
+    <nav>
+      <div class="logo"><a href="index.html">Home</div></a>
+        <ul>
+          <li><a href="#">Teacher</a></li>
+      
+          <li><a href="https://www.dkv.smkn1.tangera.ng/" target="_blank">About DKV</a></li>
+    
+          <li><a href="Students.html">Student</a></li>
+    
+          <li><a href="Memories.html">Memories</a></li>
+    </nav>
+</header>
+  <h1>Teacher</h1>
+
+  <div class="gallery">
+    <img src="https://i.imgur.com/XMyR1rQ.jpeg" alt="Foto Utama Atas">
+  </div>
+
+  <div class="guru-list">
+  <h1>Daftar Guru-guru</h1>
+  <ul>
+    <li>Aah Hilyati, S.Pd.</li>
+    <li>Ade Sevianto Dwitama, S.Si.</li>
+    <li>Anjar Tirtayansyah, S.Kom.</li>
+    <li>Ariani Devita Sari</li>
+    <li>Arlia Noviana, S.Pd.I</li>
+    <li>Asri Marheni, S.Pd.</li>
+    <li>Budi, S.Si., M.Kom.</li>
+    <li>Cartika Wibowo, S.Kom.</li>
+    <li>Dedi Agustian, S.Pd.</li>
+    <li>Dra. Edeh Kurniati</li>
+    <li>Dra. Lilis Huzanah</li>
+    <li>Dra. Mimin Aminah</li>
+    <li>Dra. Rini Saraswati, M.Pd.</li>
+    <li>Dra. Ropiah</li>
+    <li>Dra. Sudiyanti</li>
+    <li>Dra. Yenny Rismayani</li>
+    <li>Drs. Agus Herawan, M.M.</li>
+    <li>Drs. Aep Gumiwa, M.M.</li>
+    <li>Drs. John Jedi Roland</li>
+    <li>Drs. Khairu Umat</li>
+    <li>Drs. Marganda Simamora</li>
+    <li>Drs. Rakhmat Gunawan</li>
+    <li>Drs. Rasman Siahaan, M.M.</li>
+    <li>Drs. Ricky Maxie Suawa</li>
+    <li>Drs. Suparno</li>
+    <li>Drs. Syafrinal</li>
+    <li>Drs. Tedi Sanjaya</li>
+    <li>Dwi Dona Kustiawati, S.Pd., M.Pd.</li>
+    <li>Dwi Haryanto, S.Pd.</li>
+    <li>Else Wijayanti, S.Pd.</li>
+    <li>Enny Fitriani, S.Pd.</li>
+    <li>Era Marjianti, S.Pd.</li>
+    <li>Farita Nurmala, M.Pd.</li>
+    <li>Fitri Roeri Zuliwati, M.Pd.</li>
+    <li>Ganjar Candra Sumindar, S.Pd.</li>
+    <li>Habibatulah Rifah Mahyunda, S.Pd.</li>
+    <li>Hendrik Herdiansyah, M.Kom</li>
+    <li>Herlina, S.Pd.</li>
+    <li>Heru Prasetiawan, M.Kom.</li>
+    <li>Hery Faturochman, S.S.</li>
+    <li>Imas Maesyaroh, S.Pd.</li>
+    <li>Inne Pratiwi, S.Pd.</li>
+    <li>Ika Rosika, S.Pd.</li>
+    <li>Ishako Iskandar, S.Kom.</li>
+    <li>Iwan Mulyawan, S.Kom.</li>
+    <li>Jaja, S.Pd.</li>
+    <li>Laili Damayanti, S.Pd.I.</li>
+    <li>Ma’mun, S.Pd.</li>
+    <li><a style="text-decoration: none;" href="https://www.mawan.id" target="_blank">Mawan Agus Nugroho, S.Kom, M.Kom.</a></li>
+    <li>Meslise Rahnila, S.Pd.</li>
+    <li>Mira Cristiana, S.Kom.</li>
+    <li>Muiyah, S.Pd.</li>
+    <li>Muhammad Ikhsan Fadhilah, S.Pd.</li>
+    <li>Neneng Kurniamala, S.Pd.</li>
+    <li>Onnoveri, S.Pd.</li>
+    <li>Putri Pramita Swari, S.Pd.</li>
+    <li>Rifka Hijah Aryani, M.Kom.</li>
+    <li>Ritayanah Tenrijiji, S.Pd.</li>
+    <li>Rita Febriana Kurahman, S.Pd.</li>
+    <li>Rokilah, S.Pd.</li>
+    <li>Ruhimat, S.Pd., M.M.</li>
+    <li>Sri Sumartinah, S.S.</li>
+    <li>Siti Fauzia Rahmah, S.Pd.</li>
+    <li>Siti Nurjanah</li>
+    <li>Suci Rahmadiah, S.E.</li>
+    <li>Suherman, S.Kom.</li>
+    <li>Sukimin, S.Pd.</li>
+    <li>Sumyati, S.Pd., M.Pd.</li>
+    <li>Sudiro, S.Pd.K.</li>
+    <li>Sugianto, S.Pd.</li>
+    <li>Tuti Alawiyah, S.Pd.</li>
+    <li>Ulfia Nurjanah</li>
+    <li>Venny Tauresia, M.Pd.</li>
+    <li>Waluyo, S.Pd.</li>
+    <li>Yanti Ariani, S.Pd.</li>
+  </ul>
+</div>
+
+<div class="tombol">
+    <button id="darkModeToggle">🌙</button>
+  </div>
+
+  <footer class="footer">
+      &copy; b.nrealt
+  </footer>
+
+  <script src="Dark Mode, Page P&N.js"></script>
+</body>
+</html>

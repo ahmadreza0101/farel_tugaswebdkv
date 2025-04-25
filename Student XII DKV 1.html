@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Nama DKV 1</title>
+  <link rel="stylesheet" href="Dark Mode.css">
+  <style>
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.8s ease, color 0.8s ease;
+    }
+
+    header {
+      background-color: #211c84;
+      color: #f4f8ff;
+      padding: 15px;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: #f4f8ff;
+      text-decoration: none;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li {
+      display: inline-block;
+      position: relative;
+    }
+
+    header nav ul li a {
+      display: block;
+      color: #f4f8ff;
+      text-decoration: none;
+      pad: 20px 25px;
+      font-size: 20px;
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+      color: #444;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 60px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .grid-container a {
+      text-decoration: none;
+    }
+
+    .name {
+      background-color: #fff;
+      color: #444;
+      border-left: 5px solid #211c84;
+      padding: 10px 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;    /* Supaya garis nggak keluar box */
+    }
+
+    .name:hover {
+      background-color: #cdc1ff;
+      cursor: pointer;
+      display: block;
+      
+    }
+
+    .name span {
+      font-weight: bold;
+      color: #444;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #211c84;
+      color: #f4f8ff;
+    }
+
+    .footer a {
+      color: #f0f6ff;
+      text-decoration: none;
+    }
+
+    /* menubar */
+    a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: #b5a8d5;
+      transition: width 0.4s ease-in-out;
+    }
+
+    a:hover::after {
+      width: 100%;
+    }
+
+    ul li a:hover {
+      color: #cdc1ff;
+      background: #7a73d1;
+      border-radius: 5px;
+    }
+
+    /*dark mode*/
+    .dark-mode h1 {
+      color: #f4f8ff;
+    }
+
+    .dark-mode .grid-container a {
+      color: #f4f8ff;
+    }
+
+    .dark-mode span {
+      color: #f4f8ff;
+    }
+
+    .dark-mode .name {
+      background-color: #111;
+    }
+
+    /*tombol page*/
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 800px;
+      margin: 20px auto; /* tengahin container di layar */
+      padding: 0 20px;   /* kasih jarak dari sisi kiri-kanan */
+    }
+
+    .nav-button {
+      background-color: #211c84;
+      color: #f4f8ff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-button:hover {
+      background-color: #cdc1ff;
+    }
+  </style>
+</head>
+<body>
+<header>
+    <nav>
+      <div class="logo"><a href="index.html">Home</div></a>
+        <ul>
+          <li><a href="Teacher.html">Teacher</a></li>
+      
+          <li><a href="https://www.dkv.smkn1.tangera.ng/" target="_blank">About DKV</a></li>
+    
+          <li><a href="Students.html">Student</a></li>
+    
+          <li><a href="Memories.html">Memories</a></li>
+    </nav>
+</header>
+  <h1>Daftar Nama XII DKV 1</h1>
+
+  <div class="navigation">
+    <button class="nav-button" onclick="goToPage('#')">← Sebelumnya</button>
+    <button class="nav-button" onclick="goToPage('Students.html')">Berikutnya →</button>
+  </div>
+
+  <div class="grid-container">
+    <a class="name" href="#" target="_blank"><span>1.</span> Abdan Shafiq Athalla Yusri</a>
+    <a class="name" href="#" target="_blank"><span>19.</span> Muhammad Akmal Firaaski</a>
+    <a class="name" href="#" target="_blank"><span>2.</span> Aditya Putra Nugraha</a>
+    <a class="name" href="#" target="_blank"><span>20.</span> Muhammad Al Ridho Ramadhani</a>
+    <a class="name" href="#" target="_blank"><span>3.</span> Aisyah Alimah Lesmono</a>
+    <a class="name" href="#" target="_blank"><span>21.</span> Muhammad Helmi Athallah</a>
+    <a class="name" href="#" target="_blank"><span>4.</span> Aldini Kurniawan</a>
+    <a class="name" href="https://www.instagram.com/hilman_ghazy" target="_blank"><span>22.</span> Muhammad Hilman Al-Ghazy</a>
+    <a class="name" href="#" target="_blank"><span>5.</span> Andre Firmansah</a>
+    <a class="name" href="#" target="_blank"><span>23.</span> Muhammad Irfansyah</a>
+    <a class="name" href="#" target="_blank"><span>6.</span> Azka Aimee Namiah</a>
+    <a class="name" href="#" target="_blank"><span>24.</span> Muhammad Shiddiq Al Khawarizmi</a>
+    <a class="name" href="#" target="_blank"><span>7.</span> Bintang Basmara Abdullah</a>
+    <a class="name" href="#" target="_blank"><span>25.</span> Nabila Zahran Anabela</a>
+    <a class="name" href="#" target="_blank"><span>8.</span> Caysa Medliona</a>
+    <a class="name" href="#" target="_blank"><span>26.</span> Nasira Siddiqa Nurrahman</a>
+    <a class="name" href="#" target="_blank"><span>9.</span> Emilio Sasongko</a>
+    <a class="name" href="#" target="_blank"><span>27.</span> Nazila Diah Arfan Putri</a>
+    <a class="name" href="#" target="_blank"><span>10.</span> Eryshia Then</a>
+    <a class="name" href="#" target="_blank"><span>28.</span> Nidya Putri Rinton</a>
+    <a class="name" href="#" target="_blank"><span>11.</span> Faiz Hakim Novianto</a>
+    <a class="name" href="#" target="_blank"><span>29.</span> Rafli Anadi Wicaksono</a>
+    <a class="name" href="#" target="_blank"><span>12.</span> Falih Ghani Akhmad</a>
+    <a class="name" href="#" target="_blank"><span>30.</span> Riyana Larasati</a>
+    <a class="name" href="#" target="_blank"><span>13.</span> Felicia Aisyah Serenity</a>
+    <a class="name" href="#" target="_blank"><span>31.</span> Safira Natasya Ramadhany</a>
+    <a class="name" href="#" target="_blank"><span>14.</span> Habiburrahman Sidik</a>
+    <a class="name" href="#" target="_blank"><span>32.</span> Salwa Naurah El Imani</a>
+    <a class="name" href="#" target="_blank"><span>15.</span> Imam Fabio At-Tarmizi</a>
+    <a class="name" href="#" target="_blank"><span>33.</span> Syafira Azhara</a>
+    <a class="name" href="#" target="_blank"><span>16.</span> Meilani Wulandari</a>
+    <a class="name" href="#" target="_blank"><span>34.</span> Tiara</a>
+    <a class="name" href="#" target="_blank"><span>17.</span> Muhamad Azhim Ildana</a>
+    <a class="name" href="#" target="_blank"><span>35.</span> Violet Azra Zulfaqa</a>
+    <a class="name" href="#" target="_blank"><span>18.</span> Muhamad Julkahviludin</a>
+  </div>
+
+  <div class="tombol">
+    <button id="darkModeToggle">🌙</button>
+  </div>
+
+  <footer class="footer">
+      &copy; b.nrealt
+  </footer>
+
+  <script src="Dark Mode, Page P&N.js"></script>
+</body>
+</html>
